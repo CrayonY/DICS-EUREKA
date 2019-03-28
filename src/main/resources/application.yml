@@ -1,9 +1,9 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://10.66.1.202:8761/eureka-0.0.1-SNAPSHOT/eureka/
+#      defaultZone: http://10.66.1.202:8761/eureka-0.0.1-SNAPSHOT/eureka/
 #      defaultZone: http://10.66.1.160:8761/eureka/
-#    defaultZone: http://10.66.1.192:8761/eureka-0.0.1-SNAPSHOT/eureka/
+      defaultZone: http://10.66.1.192:8761/eureka-0.0.1-SNAPSHOT/eureka/
     register-with-eureka: true
     fetch-registry: true
 
