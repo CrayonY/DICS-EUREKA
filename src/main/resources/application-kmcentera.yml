@@ -1,6 +1,5 @@
 eureka:
   client:
-    ip-addre
     service-url:
       # defaultZone: http://10.66.1.202:8761/eureka-0.0.1-SNAPSHOT/eureka/
       # defaultZone: http://10.66.1.160:8761/eureka/
