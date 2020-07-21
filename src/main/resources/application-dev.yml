@@ -1,0 +1,23 @@
+eureka:
+  client:
+    service-url:
+      # defaultZone: http://10.66.1.202:8761/eureka-0.0.1-SNAPSHOT/eureka/
+      # defaultZone: http://10.66.1.160:8761/eureka/
+      # defaultZone: http://10.66.1.192:8761/eureka-0.0.1-SNAPSHOT/eureka/
+      defaultZone: http://localhost:8761/eureka-0.0.1-SNAPSHOT/eureka/
+      # 像对端注册的地址 A中心 - 大漾田10.50.197.241，10.50.197.242
+
+      #defaultZone: http://10.50.197.241:8761/eureka-0.0.1-SNAPSHOT/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+  #  server:
+  #    enable-self-preservation: false
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+spring:
+  application:
+    name: eureka
+server:
+  port: 8761
